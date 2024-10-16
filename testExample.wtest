@@ -1,9 +1,12 @@
-import example.pepita
+import accesorios.*
+import bicicleta.*
 
-describe "group of tests for pepita" {
+describe "test de bicicleta" {
+  test "bici1" {
+    const bici1 = new Bicicleta(rodado = 28, largo = 150, marca = "Olmo", accesorios = [farolito])
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+    assert.equals(85, bici1.altura())
+
+
   }
-
 }
