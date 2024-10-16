@@ -19,5 +19,11 @@ class Bicicleta{
 
   method tieneLuz() = accesorios.any({accesorio => accesorio.esLuminoso()})
 
+  method accesoriosLivianos() {
+    const liviano = accesorios.filter({accesorio => accesorio.peso() < 1})
+
+    return liviano
+  }
+
 }
 
